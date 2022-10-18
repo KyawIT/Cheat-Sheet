@@ -1,57 +1,32 @@
-<script>
-	import Counter from '$lib/Counter.svelte';
-</script>
-
 <svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+    <title>Home</title>
+    <style>
+        body {
+      background-image: url("seoul.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    </style> 
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset="svelte-welcome.webp" type="image/webp" />
-				<img src="svelte-welcome.png" alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/index.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
+<div class="cover d-flex justify-content-center align-items-center">
+    <h1 class="display-1 text-white title-txt">CheatSheet</h1>
+</div>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
+    .cover {
+      height: 80vh;
+    }
 
-	h1 {
-		width: 100%;
-	}
+    
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
+    .title-txt {
+      font-weight: 800;
+    }
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+    .title-txt:hover {
+      letter-spacing: 2rem;
+      transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+    }
+  </style>
