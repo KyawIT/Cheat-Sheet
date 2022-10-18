@@ -787,7 +787,7 @@
 
 <ol>
 <li>Make bullet a square<br>
-<code>list-style-type: disc;</code></li>
+<code>list-style-type: square;</code></li>
 <li>Make bullet an image named &quot;my-bullet.png&quot;<br>
 <code>list-style-image: url(&quot;my-bullet.png&quot;);</code></li>
 <li>Make bullet an uppercase roman number<br>
