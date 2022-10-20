@@ -1,4 +1,6 @@
 <svelte:head>
+  <title>RA2</title>
+
     <style>
         /**
    * prism.js Github theme based on GitHub's theme.

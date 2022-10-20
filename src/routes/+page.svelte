@@ -24,9 +24,4 @@
     .title-txt {
       font-weight: 800;
     }
-
-    .title-txt:hover {
-      letter-spacing: 2rem;
-      transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-    }
   </style>

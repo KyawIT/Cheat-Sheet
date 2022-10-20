@@ -1,27 +1,34 @@
 <script>
 </script>
 
-<header
-      class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom bg-white"
-    >
-      <a
-        href="/"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none"
-      >
-        <svg class="bi me-2" width="40" height="32">
-          <use xlink:href="#bootstrap"></use>
-        </svg>
-        <span class="fs-4">CheatSheet</span>
-      </a>
-      <ul class="nav nav-pills">
+
+<nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Cheat Sheet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
         <li class="nav-item">
-          <a href="/" class="nav-link active" aria-current="page">Home</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-        <li class="nav-item"><a href="/RA1" class="nav-link">RA1</a></li>
-        <li class="nav-item"><a href="/RA2" class="nav-link">RA2</a></li>
-        <li class="nav-item"><a href="/RA3" class="nav-link">RA3</a></li>
+        <li class="nav-item">
+              <a class="nav-link" href="/ra1">RA1</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="/ra2">RA2</a>
+        </li>
+        <li class="nav-item">
+              <a class="nav-link" href="/ra3">RA3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/css">CSS</a>
+        </li>
       </ul>
-    </header>
+    </div>
+  </div>
+</nav>
 
 <main>
 	<slot />
